@@ -4,7 +4,10 @@ for z in my_iterable:
         print('{} is EVEN !!!'.format(z) )
     else:
         print('{} is ODD'.format(z))
-    
+
+print('')
+print('')
+
 #print(f'{} is ODD')  --- ONLY WORKS IN PYTHON 2
 #print('{} is ODD'.format(z))
 #print('printed words'.format(variable) )  python2 =  python3  print(f'{variable}')
@@ -17,3 +20,13 @@ for z in my_iterable:
 #print(f'The TOTAL of the number is : {list_sum}' )  -- python3
 print('The TOTAL of the numbers is : {}'.format(list_sum) )
 #having the above print statement within the for loop i.e. without the indentation gives us a printout of the sums
+
+print('')
+print('')
+
+mystring = 'Hello World'
+
+for letter in mystring:
+    print(letter)
+#The for statement can also be      for letter in 'Hello World':     and use _ instead of the "letter" variable
+

@@ -7,3 +7,4 @@ for z in my_iterable:
     
 #print(f'{} is ODD')  --- ONLY WORKS IN PYTHON 2
 #print('{} is ODD'.format(z))
+#print('printed words'.format(variable) )  python2 =  python3  print(f'{variable}')

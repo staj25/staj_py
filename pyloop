@@ -1,0 +1,9 @@
+my_iterable = [1,2,3,4]
+for z in my_iterable:
+    if (z % 2) == 0:
+        print('{} is EVEN !!!'.format(z) )
+    else:
+        print('{} is ODD'.format(z))
+    
+#print(f'{} is ODD')  --- ONLY WORKS IN PYTHON 2
+#print('{} is ODD'.format(z))

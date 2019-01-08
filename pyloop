@@ -8,3 +8,12 @@ for z in my_iterable:
 #print(f'{} is ODD')  --- ONLY WORKS IN PYTHON 2
 #print('{} is ODD'.format(z))
 #print('printed words'.format(variable) )  python2 =  python3  print(f'{variable}')
+
+#To add up all of the numbers e.g. TOTAL
+list_sum = 0
+for z in my_iterable:
+    list_sum = list_sum + z
+
+#print(f'The TOTAL of the number is : {list_sum}' )  -- python3
+print('The TOTAL of the numbers is : {}'.format(list_sum) )
+#having the above print statement within the for loop i.e. without the indentation gives us a printout of the sums

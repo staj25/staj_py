@@ -1,0 +1,15 @@
+# while loop syntax below
+
+#while boolean condition:
+    #do somthing
+#else:
+    #do something
+
+
+x = 0
+
+while x <= 5:
+    print(f'The current value of x is {x}')
+    x = x + 1
+    #without the equation above you'll have an infinite while loop
+    #the equation can also be written as ....    x += 1

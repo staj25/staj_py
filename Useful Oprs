@@ -67,7 +67,25 @@ print('\n')
 counter_list = list(enumerate(word, 1))
 print(counter_list)
 
+print('\n')
 
-#zip function
 
-    
+#zip operator
+#it pairs up & combines separate data/values and outputs a tuple
+# ** note ** - shortest list is used as ref when lists are uneven
+
+
+mylist1 = [1,2,3]
+mylist2 = ['a','b','c']
+mylist3 = ['toronto','lagos','rio']
+
+for item in zip(mylist1,mylist2,mylist3):
+    print(item)
+
+print('\n')
+
+#below -- convert output into a list
+print(list(zip(mylist1,mylist2)))
+
+
+#in operator    

@@ -5,8 +5,7 @@
 for num in range(10):
     print(num)
 
-print('')
-print('')
+print('\n')
 
 #range(6,10) counts from 6-9
 #range(0,10,2) counts from 0 to 9 with a step size of 2 i.e. all even numbers
@@ -15,20 +14,17 @@ print('')
 for num in range(0,10,2):
     print(num)
     
-print('')
-print('')
+print('\n')
 
 #you can have the range results converted into a list
 
 a = list(range(0,10,2))
 print(a)
 
-
-print('') 
-print('')
+print('\n')
 
 #enumerate
-
+ 
 index_count = 0
 
 for letter in 'abcde':
@@ -38,11 +34,10 @@ for letter in 'abcde':
     index_count += 1
 
 
-print('')
-print('')
+print('\n')
 
 
-##belo - print the string alphabet of a certain index number
+##below - print the string alphabet of a certain index number
 
 index_ct = 0    
 word = 'abcde'
@@ -51,7 +46,16 @@ for letter in word:
     print(word[index_ct])
     index_ct += 1
 
+print('\n')
+
+
 #instead of the above the enumerate fxn as described below was built
+#it produces a tuple output
+
+word = 'abcde'
+
+for item in enumerate(word):
+    print(item)
 
 
     

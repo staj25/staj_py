@@ -1,0 +1,57 @@
+#useful operators
+
+#range generates numbers 0-9 not including 10
+
+for num in range(10):
+    print(num)
+
+print('')
+print('')
+
+#range(6,10) counts from 6-9
+#range(0,10,2) counts from 0 to 9 with a step size of 2 i.e. all even numbers
+
+
+for num in range(0,10,2):
+    print(num)
+    
+print('')
+print('')
+
+#you can have the range results converted into a list
+
+a = list(range(0,10,2))
+print(a)
+
+
+print('') 
+print('')
+
+#enumerate
+
+index_count = 0
+
+for letter in 'abcde':
+    print('At index {} the letter is {}'.format(index_count,letter))
+    #.format identifies 2 vars 
+    #py3 print format system --  print(f'At index {index_count} the letter is {letter}')
+    index_count += 1
+
+
+print('')
+print('')
+
+
+##belo - print the string alphabet of a certain index number
+
+index_ct = 0    
+word = 'abcde'
+
+for letter in word:
+    print(word[index_ct])
+    index_ct += 1
+
+#instead of the above the enumerate fxn as described below was built
+
+
+    

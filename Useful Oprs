@@ -51,11 +51,23 @@ print('\n')
 
 #instead of the above the enumerate fxn as described below was built
 #it produces a tuple output
+#enumerate -- (iterable, start=0) i.e. by default the counter starts at 0
+#Greate example -- http://book.pythontips.com/en/latest/enumerate.html
 
 word = 'abcde'
 
 for item in enumerate(word):
+    #for x,y then print(x,y) gives you the output as index, value
+    #(word,1) starts the counter at 1
     print(item)
 
+print('\n')
+
+#below -- does it without a for loop !!! wow!!!
+counter_list = list(enumerate(word, 1))
+print(counter_list)
+
+
+#zip function
 
     

@@ -93,6 +93,61 @@ print('\n')
 for a,b,c in zip(mylist1,mylist2,mylist3):
     print(b)
     
+print('\n')
+
+#in operator - works on iterable obj types    - check if obj is in a list - returns boolean output True / False
+
+y = 'x' in [1,2,3]
+print(y)
+
+print('\n')
+
+r = '2' in ['2','y','z']
+print(r)
+
+print('\n')
+
+mk = 'mykey' in {'mykey':345}
+print(mk)
+
+print('\n')
+
+# **** NOTE **** The fxns used so far & below are all part of Built-in Libraries - Importing Libs topic below
+
+#in - con't - below checks for the item in the dictionary's value or entire item
+d = {'mykey':345}
+va = 345 in d.values()
+print('values')
+print(va)
+
+print('\n')
+
+ky = 345 in d.keys()
+print('keys')
+print(ky)
+
+print('\n')
+
+it = 345 in d.items()
+print('items')
+print(it)
+
+print('\n')
+
+#min / max operator
+alist = [10,20,30,40,100]
+minimum = min(alist)
+print('minimum')
+print(minimum)
+
+print('\n')
 
 
-#in operator    
+maximum = max(alist)
+print('maximum')
+print(maximum)
+
+print('\n')
+
+#Importing fxns from Libs -- hit tab using jupyter after line below to list the fxns available in this "random" lib
+from random import 

@@ -87,5 +87,12 @@ print('\n')
 #below -- convert output into a list
 print(list(zip(mylist1,mylist2)))
 
+print('\n')
+
+#tuple unpacking test plus zip test -- print(b) picks the middle value of the newly created zip lists
+for a,b,c in zip(mylist1,mylist2,mylist3):
+    print(b)
+    
+
 
 #in operator    

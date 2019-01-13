@@ -150,4 +150,39 @@ print(maximum)
 print('\n')
 
 #Importing fxns from Libs -- hit tab using jupyter after line below to list the fxns available in this "random" lib
-from random import 
+#The 1st line imports the shuffle fxn from the "random" library
+#The print output shows the new list's values as being randomized
+from random import shuffle
+rlist = [1,2,3,4,5]
+shuffle(rlist)
+print(rlist)
+
+#not sure I wasn't able to have the output of the shuffle fxn put into a variable -- newlist = shuffle(rlist)
+#video says it doesn't actually return anything
+#It is an "in place" fxn that operates in place on the list!!!
+
+print('\n')
+
+#below imports the randint fxn -- (0,100) are the starting and ending numbers from which the random number will be selected
+from random import randint 
+u = randint(0,100)
+print(u)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

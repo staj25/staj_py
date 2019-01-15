@@ -21,3 +21,22 @@ print ('\n')
 #another example while performaing ops on the list -- in this case **2 op
 mylista = [num**2 for num in range(0,11)]
 print(mylista)
+print('\n')
+
+
+#same as above but adding conditional statements
+mylista = [num**2 for num in range(0,11) if num%2==0]
+print(mylista)
+
+print('\n')
+
+#applying above concept to convert celcius to fahrenheit
+#** the concept is - the for loop selects the value, and passes it to the calculation preceding "for" **
+#** which"processes" the value and puts the output in the list as an element **
+celcius = [0,10,20,34.5]
+print('celcius')
+print(celcius)
+print('\n')
+fahrenheit = [( (9/5)*temp + 32) for temp in celcius]
+print('fahrenheit')
+print(fahrenheit)

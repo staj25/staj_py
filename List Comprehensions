@@ -1,4 +1,12 @@
 #Moving data into a List
 h = [a for a in 'history']
 print(h)
-print '\n'
+print ('\n')
+
+#old method
+hi = []
+
+b = 'history'
+for x in b:
+    hi.append(x)
+print(h)   

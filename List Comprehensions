@@ -10,3 +10,14 @@ b = 'history'
 for x in b:
     hi.append(x)
 print(h)   
+print ('\n')
+
+#another example using range function
+mylist = [num for num in range(0,11)]
+print(mylist)
+print ('\n')
+
+
+#another example while performaing ops on the list -- in this case **2 op
+mylista = [num**2 for num in range(0,11)]
+print(mylista)

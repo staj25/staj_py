@@ -40,3 +40,5 @@ print('\n')
 fahrenheit = [( (9/5)*temp + 32) for temp in celcius]
 print('fahrenheit')
 print(fahrenheit)
+
+##Assignment create two lists e.g. country & city and match the city to their country as the output using if statements !!!!

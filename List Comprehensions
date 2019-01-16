@@ -30,6 +30,14 @@ print(mylista)
 
 print('\n')
 
+#another example of using if/conditional statements in list comprehension but with different positioning of if
+#**** NOTE **** IT'S NOT ADVISABLE TO HAVE LONGE ONE-LINER CODING LIKE THIS !!!!!
+results = [x if x%2==0 else 'ODD' for x in range(0,11)]
+print('result below')
+print(results)
+print('\n')
+
+
 #applying above concept to convert celcius to fahrenheit
 #** the concept is - the for loop selects the value, and passes it to the calculation preceding "for" **
 #** which"processes" the value and puts the output in the list as an element **
@@ -41,9 +49,29 @@ fahrenheit = [( (9/5)*temp + 32) for temp in celcius]
 print('fahrenheit')
 print(fahrenheit)
 
+print('\n')
+
+print('**nested loop**')
+#list comprehension with nested loops example
+mylist = []
+
+for x in [2,4,6]:
+    for y in [100,200,300]:
+        mylist.append(x*y)
+print(mylist)
+
+#doing a duplicate of the above code in one line - AGAIN NOT ADVISABLE FOR READABILITY
+print('one liner nested loop')
+mylist = [x*y for x in [2,4,6] for y in [1,10,1000]]
+print(mylist)
+
 ## ****** Assignment ******  create two lists e.g. country & city and match the city to their country as the output using if statements !!!!
 #--------
 #method1 - use indexing to cycle through list and use if staments to identify specify cities/countries and put the value in list vars
 #        - use zip to concat the list vars as output
 #--------
 #method2 - see if it's possible to use zip fxn to identify specific elements in the lists the proceed with merging as in method1 above
+#--------
+#method3 - using nested loops - 1 list is in the outer loop and the other is in the inner one
+#used in conjunction with if statements to select and match the right/corresponding elements
+

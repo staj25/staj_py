@@ -1,0 +1,60 @@
+#STRINGS ARE IMMUTABLE i.e. you can't change them using indexing  
+#e.g. the code below that tries to replace a letter in a string on idex 0, will give you an error!
+#name = "Sam"
+#name[0] = 'P'
+
+#To do the above you have to use concatenating i.e. merging 2 strings
+
+name = 'Sam'
+
+last_letters = name[1:]
+print(last_letters)
+
+print('\n')
+
+
+print('P' + last_letters)
+
+print('\n')
+
+
+x = 'Hello World'
+
+
+print(x + " it is beautiful outside!")
+
+print('\n')
+
+#mulitplication with letters, below gives u 10 z's
+
+letter = 'z'
+print(letter * 10)
+
+print('\n')
+
+# *** NOTE **** you can't concatenate numbers with strings
+#e.g. the below will not calc and give you 5 as the result
+print('2' + '3')
+print('\n')
+
+
+####  METHODS 
+# Upper Methods - converts string into upper case likewise lower method
+print(x.upper())
+print(x.lower())
+print('\n')
+
+
+
+## Split Method - Create a list from a string
+#split is done based on the space delimiter by default
+# **** remember from above x = 'Hello World'
+
+x.split()
+print(x.split())
+
+print('\n')
+
+#this uses 'i' as a delimiter
+y = 'Hi this is a string'
+print(y.split('i'))

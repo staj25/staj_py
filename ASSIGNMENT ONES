@@ -12,3 +12,14 @@ for i in st.split():
     if i[0] == 's':
         b.append(i)
         print(b)
+
+#Interesting Result if done this way
+#Results are broken into seperate elements of letters in the list instead of whole words
+#Eureka!! I see why!! 
+#That's what List substitution is meant to do - take each element and add it as a seperate element in a List
+#so each element that starts with s is being put in the list as a seperate element!
+
+for i in st.split():
+    if i[0] == 's':
+        b = [a for a in i]
+        print(b)

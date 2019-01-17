@@ -4,3 +4,11 @@ st = 'Print only the words that start with s in this sentence'
 for i in st.split():
     if i[0] == 's':
         print(i)
+print('\n')
+
+#Better still put answers from above in a List
+b = []
+for i in st.split():
+    if i[0] == 's':
+        b.append(i)
+        print(b)

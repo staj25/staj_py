@@ -16,3 +16,24 @@ for a, b in enumerate(elements,100):
 #   kite = {a:b} ---- this creates a dictionary from the output instead of a list like below !!!
     kite = [a,b]
     print(kite)
+
+
+
+
+#### NOTE - METHOD vs FUNCTION #### https://developers.google.com/edu/python/lists
+# EXAMPLE - Notice that these are *methods* on a list object, 
+#  while len() is a function that takes the list (or string or whatever) as an argument.
+
+#Common error: note that the BELOW methods do not *return* the modified list, they just modify the original list.
+#THE BELOW WON'T WORK !!!
+
+list = ['larry', 'curly', 'moe']
+print('result of wrong attempt')
+print(list.append('shemp'))         ## append elem at end
+print('\n')
+#correction below
+
+
+list.append('shemp')
+print('correct syntax')
+print(list)

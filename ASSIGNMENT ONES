@@ -29,3 +29,76 @@ for i in st.split():
 for i in range(0,11):
     if i % 2 == 0:
         print(i)
+
+
+#Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
+
+divi = [j for j in range(1,51) if j % 3 == 0 ]
+print(divi)
+
+
+
+#Go through the string below and if the length of a word is even print "even!"
+
+st = 'Print every word in this sentence that has an even number of letters'
+
+for u in st.split():
+    if len(u) % 2 == 0:
+        print( f'          {u} --- EVEN!' )
+        print('\n')
+    else:
+        print('\n')
+        print( f' ODD --  {u} ')
+        print('\n')
+
+
+#Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, 
+#and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+### EUREKA  !!! 
+# putting the fizzbuzz statement first gives you ONLY fizzbuzz for those numbers that are both multiples of both 3 & 5 !!!
+# putting the fizzbuzz statement last gives you BOTH Buzz & fizzbuzz for those numbers that are both multiples of 3 & 5 !!!
+
+for br in range(1,101):
+    if br % 3 == 0 and br % 5 == 0:
+        print ('FizzBuzz')
+    #testing different iterations of the code
+    #if br % 3 == 0:
+    #    print ('Fizz')
+    elif br % 5 == 0:
+        print ('Buzz')
+    elif br % 3 == 0 :
+        print ('Fizz')
+    else:
+        print(br)
+
+print('\n')
+print('SECOND ITERATION OF CODE!!!')
+print('*****************************************************************************')
+print('\n')
+
+for br in range(1,101):
+    #testing different iterations of the code
+    #if br % 3 == 0 and br % 5 == 0:
+    #    print ('FizzBuzz')
+    #if br % 3 == 0:
+    #    print ('Fizz')
+    if br % 5 == 0:
+        print ('Buzz')
+    elif br % 3 == 0 :
+        print ('Fizz')
+    if br % 3 == 0 and br % 5 == 0:
+        print ('FizzBuzz')
+    else:
+        print(br)
+        
+        
+        
+#Use List Comprehension to create a list of the first letters of every word in the string below:
+
+st = 'Create a list of the first letters of every word in this string'
+
+lima = [bet[0] for bet in st.split()]
+
+print(lima)
+
+            

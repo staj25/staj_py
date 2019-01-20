@@ -13,5 +13,6 @@ for au in xao:
 #ENUMERATE FUNCTION
 #...  , 100)  specifies the starting index numbher
 for a, b in enumerate(elements,100):
+#   kite = {a:b} ---- this creates a dictionary from the output instead of a list like below !!!
     kite = [a,b]
     print(kite)

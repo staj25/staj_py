@@ -1,0 +1,17 @@
+
+#Trying hard to have the  elements of the list individually
+#printed as their own seperate list
+#EUREKA!! Simply adding [] to the result of the for loop and making it a variable worked!!!!
+
+#lao = []
+xao = [k for k in p.split()  if len(k) > 3 ]
+for au in xao:
+    zeze = [au]
+    #lao.append(au)
+    print(zeze)
+    
+#ENUMERATE FUNCTION
+#...  , 100)  specifies the starting index numbher
+for a, b in enumerate(elements,100):
+    kite = [a,b]
+    print(kite)

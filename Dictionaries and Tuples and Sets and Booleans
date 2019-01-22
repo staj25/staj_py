@@ -1,0 +1,155 @@
+#Dictionaries as opposed to Lists CANNOT be sorted (indexed or sliced), though can be likeable as you don't need to know the index order i.e. items can be accessed quicker.
+
+
+my_dict = {'key1':'value1','key2':'value2'}
+
+print(my_dict)
+
+print( my_dict['key1'] )
+
+prices_lookup = {'apple':2.99, 'oranges':1.99, 'milk':5.80}
+
+print( prices_lookup['apple'] )
+
+
+d = {'k1':123,'k2':[0,1,2,'wow'],'k3':{'insideKey':100}}
+
+print( d['k2'] )
+
+#The above shows how dictionaries can also contain lists & even dictionaries (uncommon but doable)
+
+
+print( d['k3'] )
+
+print( d['k2']['insideKey'] )
+
+#Above shows you can go 2 layers in to retrieve values just like the below which uses (list) indexing
+
+
+print( d['k2'][3].upper() )
+'WOW'
+#below shows how to display keys, values & key-value pairing (.keys, .values, .items)
+
+
+print( d.keys() )
+
+print( d.values() )
+
+print( d.items() )
+
+print( my_dict.keys() )
+#The below removes the milk key pair
+
+
+print( prices_lookup.pop('milk') )
+
+#TUPLES - similar to lists but are immutable (like with strings) i.e. item assignment not allowed! (depicted by parentheses - (123) ) They're useful to guarantee the integrity of data i.e. so the data doesn't get changed.
+
+
+t = (1, 20, 12, 5.5,'two',3, 1, 1 , 20, 50.5, ['a', 'b', 'c'])
+
+print( t[1] )
+
+
+print( t.count(1) )
+
+
+print( t.index(50.5) )
+
+#ONLY 2 METHODS - .count is the number of occurences of the specified value & .index is index position of the specified value (as seen above)
+
+
+m = [1,2, {'one','two'}]
+
+print( type(m) )
+
+
+z = m[2]
+
+prit(z)
+
+#SETS - houses unique values no repitions. Uses {} like with dictionaries but without key-value pairs. They have no order.
+
+
+myset = set()
+
+myset
+set()
+
+myset.add(1)
+
+myset
+{1}
+
+myset.add(2)
+
+myset
+{1, 2}
+
+myset.remove(2)
+
+myset
+{1}
+.pop (removes first value), .remove (specifies value to be removed) & .add are some set methods
+
+
+mylist = [1,1,1,1,2,2,2,2,3,3,3,3,3]
+
+myset2 = set(mylist)
+
+print( myset2 )
+
+
+myset2.add('wow')
+
+myset2
+{1, 2, 3, 'wow'}
+
+x = {'fruit1':'apple', 'fruit2':'grape', 'fruit3':'banana'}
+
+print( set(x) )
+
+setx = set(x)
+
+Mset = set('Mississipi')
+#BELOW : using other data types with sets
+
+
+unique = ['These letters {} are unique'.format(Mset)] 
+
+print(unique)
+
+unique.append('another')
+
+print( unique )
+
+print( type(setx) )
+set
+
+
+#BOOLEANS
+
+Print( 1>2 )
+
+print(1==1)
+
+b = None
+
+print( type(b) )
+
+
+me = (1,1,2,3,3,44,4,5)
+
+print( type(me) )
+
+
+r = set(me)
+
+r.add(400)
+
+print(r)
+
+#below should be an error
+print( me[-2] = 5000)
+
+

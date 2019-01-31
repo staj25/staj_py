@@ -1,0 +1,42 @@
+#METHODS
+#how to discover methods - shift + tab in jupyter notebook
+#discover more methods using the python official doc - library reference -- https://docs.python.org/3/library/index.html
+
+
+
+mylist = [1,2,3]
+
+#help(variable.method)   --  this returns object documentation for specific method
+help(mylist.insert)
+print('\n')
+
+#help(variable.method)   --  this returns object documentation list
+help(mylist)
+
+print('\n')
+
+
+
+##FUNCTIONS -- creating/running code without repititive calling 
+def add_fxn(num1,num2):
+    return num1+num2
+
+result = add_fxn(3,6)
+print(result)
+print('\n')
+
+#Below shows how to add DOCSTRING to the fxn so the help() fxn can display it
+#add '''  in order to add docstring entries
+def name_fxn():
+    '''
+    DOCSTRING: This is info about the fxn
+    INPUT: n/a
+    OUTPUT: Hello
+    '''
+    print('Hello')
+    
+name_fxn()
+
+print('\n')
+
+help(name_fxn)

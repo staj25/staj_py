@@ -40,3 +40,39 @@ name_fxn()
 print('\n')
 
 help(name_fxn)
+
+print('\n')
+
+
+#adding default parameters to fxns
+#running say_hello()  as is without any parameters within () will lead to an error
+#you can avoid this by adding a default name
+
+#def say_hello(name):
+#    print('hello ' +name)
+
+def say_hello(name='NAME'):
+    print('hello ' +name)
+
+say_hello('Mimi')
+say_hello()
+
+print('\n')
+
+
+#NOTE -- the print command in the fxn is only printing out and not returning values that can be
+#put in to variables e.g. a = say_hello()  will not print out any value for a
+#you need to use the "return" command
+
+
+def say_hello(name='NAME'):
+    return 'hello ' +name
+
+result = say_hello('Mimiko Name')
+print(result)
+
+print('\n')
+
+    
+    
+    

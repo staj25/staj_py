@@ -73,6 +73,23 @@ print(result)
 
 print('\n')
 
+
+#NOTE -- the return command doesn't auto print the results of the function 
+#Running the code without the print function will not output the results
+
+def myfunc(a):
+    print ("Enter 'True' or 'False' as is and any other answer in single quotes")
+    if a == True:
+        return 'Inside'
+    elif a == False:
+        return 'Outside'
+    else:
+        return 'Your Input was Neither True nor False'
+         
+
+print( myfunc('Falsejg') )
+
+
     
     
     

@@ -90,6 +90,24 @@ def myfunc(a):
 print( myfunc('Falsejg') )
 
 
+
+######   ARGS & KWARGS    ########
+## NOTE - anything can be used in place of the word "args" as long as "*" is there
+def myfunc(*args):
+   for item in args:
+    print(item)
+    continue
+
+myfunc(10,120,100, 4545,4,454,54,4,54)
     
-    
-    
+#kwargs example    
+def myfunc(**kwargs):
+    print(kwargs)
+    if 'fruit' in kwargs:
+        print('My fruit is {}'.format(kwargs['fruit']) )
+        #Note if you use the other NEWer print formatting method, you can use indexing as above
+        #https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3
+    else:
+        print('NO FRUITS HERE')
+
+myfunc(fruit='apple')

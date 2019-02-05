@@ -1,3 +1,11 @@
+# Define a fxn that takes in arbitrary num of arguments & returns a list containing only on the even arguments
+def myfunc(*args):
+    return [i for i in args if i%2 == 0]
+
+
+
+
+
 #Use for, .split(), and if to create a Statement that will print out words that start with 's':
 
 st = 'Print only the words that start with s in this sentence'

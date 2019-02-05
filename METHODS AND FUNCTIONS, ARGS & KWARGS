@@ -111,3 +111,19 @@ def myfunc(**kwargs):
         print('NO FRUITS HERE')
 
 myfunc(fruit='apple')
+
+
+
+#another kwargs example
+# *** NOTE  *** - not sure how to do the print formatting line in a similar way using the new print formatting method
+# the argument has to be in the order as specified in the first line i.e. tuple entered first then dictionary values
+
+def myfxn(*args,**kwargs):
+    print('I would like {} {}'.format(args[0],kwargs['food']) )
+
+myfxn(10,20,30,fruit='orange',food='eggs',animal='dog')
+
+
+# *** NOTE - len(args) can be used to count the number of entred arguments
+def myf(*args):
+    return len(args)

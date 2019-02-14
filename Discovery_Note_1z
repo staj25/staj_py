@@ -1,4 +1,5 @@
 ## convert various list elemtents into a single list element - .join()
+## only used for strings, use sum() for same results but with numbers
 ## https://www.tutorialspoint.com/python/string_join.htm
 h = [a for a in 'history']
 #above creates ['h', 'i', 's', 't', 'o', 'r', 'y']
@@ -48,6 +49,10 @@ print('c' not in my_list)
 
 
 ## list function - list() - Convert an iterable (tuple, string, set, dictionary) to a list. FINALLY - EUREKA !!!
+## to find sum of elements of a tuple and convert it to a list, convert it to a list first and find the sum e.g.
+
+why = (1,23,3)
+sum(list(why))
 
 
 

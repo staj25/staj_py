@@ -1,3 +1,8 @@
+## extend method .extend - https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python
+ball = [2,'keys','player',3]
+ball.extend([55])
+#output - [2, 'keys', 'player', 3, 55]
+
 ## you can use math operator (* & +) with iterables to duplicate them
 #output - gives you 5 items named 'wow' in the list f
 f=['wow']

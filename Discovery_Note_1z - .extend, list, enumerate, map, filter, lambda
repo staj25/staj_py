@@ -1,3 +1,73 @@
+## LAMBDA fxn - fxnality that you intend to use once
+## lambda variable: variable operations/calculations
+## NOTE - NOT EVERY FXN will be possibly transformed into a lambda expression
+
+#EXAMPLE 1
+def ftn(w):
+    return lambda x: x * w * 2
+
+phase1 = ftn(10)
+phase1(0.65)
+
+#EXAMPLE 2 - CAN BE USED IN CONJUNCTION WITH OTHER FXNS & SHORTENS CODE i.e. replacing the fxn code lines
+#CONSIDER THE MAP filter EXAMPLE BELOW, there was no need to create the myfunc fxn!!!
+
+my_nums = [10,2,31,4,15]
+answer = list(map(lambda r:r < 18,my_nums))
+print(answer)
+#output [True, True, False, True, True]
+
+#MAP EXAMPLE - check even lambda test
+my_nums = [10,2,31,4,15]
+f1 = list(filter(lambda eve: eve%2 == 0,my_nums)) 
+print(f1)
+#output [10, 2, 4]
+
+#ANOTHER EXAMPLE
+names = ['One', 'Two','zwei']
+list(map(lambda n: n[0],names))
+#output - ['O', 'T', 'z']
+
+
+
+## FILTER fxn - filters true an iterable, selecting elements of the iterable based on True conditions specified
+## filter(fxn, iterables)
+
+ages = [5, 12, 17, 18, 24, 32]
+
+def myFunc(x):
+  return x < 18 
+
+kids = list(filter(myFunc, ages))  
+print(kids)    
+
+
+#OR INSTEAD OF PUTTING THE RESULTS IN A LIST YOU CAN RUN THEM THROUGH SOMETHING ELSE SPECIFIED IN A FOR LOOP e.g.
+
+for n in filter(myFunc, ages):
+    print(n)
+
+
+
+
+## MAPS fxn - ensures that each element of iterable is ran through a fxn/module
+## usually requires for statment unless wrapped within a fxn e.g. list( map(fxn/module,iterable)
+## map(fxn/module,iterable)
+
+my_nums = [1,2,3,4,5]
+who = list( map(float,my_nums))
+print(who)
+
+#OR INSTEAD OF PUTTING THE RESULTS IN A LIST YOU CAN RUN THEM THROUGH SOMETHING ELSE SPECIFIED IN A FOR LOOP e.g.
+
+for n in map(float,my_nums):
+    print(n)
+    
+    
+    
+    
+
+
 ## convert various list elemtents into a single list element - .join()
 ## only used for strings, use sum() for same results but with numbers
 ## https://www.tutorialspoint.com/python/string_join.htm

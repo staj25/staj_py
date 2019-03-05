@@ -48,6 +48,16 @@ for n in filter(myFunc, ages):
     print(n)
 
 
+## ANOTHER EXAMPLE - IF STATEMENT IN LAMBDA FXN
+names = ['jayz','hov','jigga']
+#adults2 = list(filter(lambda x:True if len(x) >= 3 else False, names))
+adults2 = list(filter(lambdax:len(x) > 3,names))
+print(adults2)
+
+
+
+
+
 
 
 ## MAPS fxn - ensures that each element of iterable is ran through a fxn/module

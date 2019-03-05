@@ -53,6 +53,7 @@ names = ['jayz','hov','jigga']
 #adults2 = list(filter(lambda x:True if len(x) >= 3 else False, names))
 adults2 = list(filter(lambdax:len(x) > 3,names))
 print(adults2)
+#output - ['jayz', 'jigga'] - i.e. output elements are selected based on conditions - length of names is greater than 3 
 
 
 
